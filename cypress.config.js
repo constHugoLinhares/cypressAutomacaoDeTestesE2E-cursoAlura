@@ -1,16 +1,23 @@
+const { defineConfig } = require("cypress")
+
 module.exports = defineConfig({
+
   e2e: {
-      setupNodeEvents(on, config) {
-        { "reporter"; "mochawesome",
-            "reporterOptions"; 
-                { "reportDir"; "cypress/report/mochawesome-report",
-                  "overwrite"; true,
-                  "html"; true,
-                  "json"; false,
-                  "code"; true,
-                  "timestamp"; "mmddyyyy_HHMMss" 
-                }
-        }
-      },
-  },
-});
+    setupNodeEvents(on, config) {
+      module.exports = defineConfig({
+        projectId: "i5x17z",
+        e2e: {
+            setupNodeEvents(on, config) {
+                { "reporter"; "mochawesome",
+                    "reporterOptions"; 
+                        { "reportDir"; "cypress/report/mochawesome-report",
+                        "overwrite"; true,
+                        "html"; true,
+                        "json"; false,
+                        "timestamp"; "mmddyyyy_HHMMss" }}
+            },
+        },
+    });
+    }
+  }
+})
