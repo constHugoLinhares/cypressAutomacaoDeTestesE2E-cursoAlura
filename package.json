@@ -2,5 +2,10 @@
     "scripts": {
         "cy:run": "cypress run",
         "cy:open": "cypress open"
+    },
+    "dependencies": {
+        "@angular/cli": "^16.2.5",
+        "concurrently": "^8.2.1",
+        "express": "^4.18.2"
     }
 }
