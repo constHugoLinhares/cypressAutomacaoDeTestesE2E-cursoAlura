@@ -8,13 +8,13 @@ nvm install 16.13.1
 nvm use 16.13.1
 ```
 
-#API REST
+# API REST
 O REST (Representational State Transfer, que significa Transferência Representacional de Estado) necessita que um cliente faça uma requisição para enviar ou modificar dados. consiste em: 
 Verbo ou método HTTP; definindo que tipo de operação o servidor irá realizar.
 Header; contém o cabeçalho da requisição que passa informações sobre a requisição.
 Path; a rota para o servidor. 
 
-#Métodos HTTP:
+# Métodos HTTP:
 Em aplicação REST, os métodos mais utilizados são:
 
 GET é o método mais comum, geralmente é usado para solicitar que um servidor envie um recurso;
